@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/** @format */
 
-function App() {
-  const [count, setCount] = useState(0)
+import { type FC } from "react";
+import { Header } from "./components/Header";
+import { MainPage } from "./components/MainPage";
+import "./App.css";
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const App: FC = () => {
+	return (
+		<div className="sm:container flex justify-center flex-col items-center min-h-screen bg-blue-100 py-20 box-border">
+			<div className="flex flex-col items-center mx-6 bg-white rounded-lg">
+				<Header />
+				<MainPage />
+			</div>
+			<div className="max-w-screen-sm border my-2">
+				<section className="gap-2 p-4">
+					<div className="p-2 bg-red-300 sm:bg-red-500">task1</div>
 
-export default App
+					<div className="p-2 bg-red-400">task1</div>
+
+					<button className="px-4 py-2 bg-red-500 text-white rounded whitespace-nowrap">
+						DELETE
+					</button>
+				</section>
+			</div>
+		</div>
+	);
+};
+export default App;
