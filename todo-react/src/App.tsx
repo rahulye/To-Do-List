@@ -7,22 +7,65 @@ import "./App.css";
 
 const App: FC = () => {
 	return (
-		<div className="sm:container flex justify-center flex-col items-center min-h-screen bg-blue-100 py-20 box-border">
-			<div className="flex flex-col items-center mx-6 bg-white rounded-lg">
+		<div className="flex flex-col justify-start items-center my-10 p-10 bg-blue-400">
+			<div className="rounded w-full flex flex-col max-w-180 mt-5 bg-amber-500">
 				<Header />
 				<MainPage />
 			</div>
-			<div className="max-w-screen-sm border my-2">
-				<section className="gap-2 p-4">
-					<div className="p-2 bg-red-300 sm:bg-red-500">task1</div>
-
-					<div className="p-2 bg-red-400">task1</div>
-
-					<button className="px-4 py-2 bg-red-500 text-white rounded whitespace-nowrap">
-						DELETE
-					</button>
-				</section>
-			</div>
+			<section className="w-full max-w-150 m-1">
+				<div className="p-2">
+					<div className="w-full flex-col sm:flex-row flex gap-2 p-1">
+						<div className="bg-white rounded flex flex-3 px-4 py-2 border-white border">
+							Task1
+						</div>
+						<div className="flex rounded bg-white flex-none px-4 py-2 border-white border">
+							7/11/2003
+						</div>
+						<button className="cursor-pointer rounded flex-none px-2 hover:ring-1 ring-red-800 bg-red-600 text-white">
+							DELETE
+						</button>
+					</div>
+				</div>
+				<div className="p-2">
+					<div className="w-full flex-col sm:flex-row flex gap-2 p-1">
+						<div className="bg-white rounded flex flex-3 px-4 py-2 border-white border">
+							Task1
+						</div>
+						<div className="flex rounded bg-white flex-none px-4 py-2 border-white border">
+							7/11/2003
+						</div>
+						<button className="rounded flex-none px-2 hover:ring-1 ring-red-800 bg-red-600 text-white">
+							DELETE
+						</button>
+					</div>
+				</div>
+				<div className="p-2">
+					<div className="w-full flex-col sm:flex-row flex gap-2 p-1">
+						<div className="bg-white rounded flex flex-3 px-4 py-2 border-white border">
+							Task1
+						</div>
+						<div className="flex rounded bg-white flex-none px-4 py-2 border-white border">
+							7/11/2003
+						</div>
+						<button className="rounded flex-none px-2 hover:ring-1 ring-red-800 bg-red-600 text-white">
+							DELETE
+						</button>
+					</div>
+				</div>
+				<div className="p-2">
+					<div className="w-full flex-col sm:flex-row flex gap-2 p-1">
+						<div className="bg-white rounded flex flex-3 px-4 py-2 border-white border">
+							Task1
+						</div>
+						<div className="flex rounded bg-white flex-none px-4 py-2 border-white border">
+							7/11/2003
+						</div>
+						<button className="rounded flex-none px-2 hover:ring-1 ring-red-800 bg-red-600 text-white">
+							DELETE
+						</button>
+					</div>
+				</div>
+			</section>
 		</div>
 	);
 };
