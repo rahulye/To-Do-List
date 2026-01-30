@@ -20,10 +20,10 @@ export const MainPage: FC<Props> = ({
 	return (
 		<main className="m-5">
 			<section
-				className={`rounded flex-col w-full items-center hover:scale-101 bg-white sm:flex-row flex gap-2 p-1 ${error ? "animate-shake ring-2 ring-red-500" : ""}`}
+				className={`rounded flex-col items-center hover:scale-101 bg-white sm:flex-row flex gap-2 p-1 ${error ? "animate-shake ring-2 ring-red-500" : ""}`}
 			>
 				<input
-					className={`outline-none hover:ring  ring-gray-500 cursor-text bg-gray-200 grow px-3 rounded py-1 `}
+					className={`outline-none w-full hover:ring  	ring-gray-500 cursor-text bg-gray-200 grow px-3 rounded py-1 `}
 					placeholder="Write your task.."
 					name="task"
 					value={task}
