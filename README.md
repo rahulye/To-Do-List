@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/82887dbb-2f47-4a0f-9e15-0d7449f6e716
 ---
 
 ## Projects Included
-### 1. Full-Stack Todo App (JWT Authentication)
+### 1. Full-Stack Todo App (JWT Authentication) and each user has their own todo list
 ### 2. React Todo App
 ### 3. Vanilla Todo App (HTML, CSS, JavaScript)
 
